@@ -39,5 +39,5 @@ Gem::Specification.new do |spec|
 
   # About every single release breaks something
   # Ruby 2.1 is no longer supported
-  spec.add_development_dependency 'rubocop', '0.61.1' if RUBY_VERSION >= '2.2.0'
+  spec.add_development_dependency 'rubocop', '0.69.0' if RUBY_VERSION >= '2.2.0'
 end

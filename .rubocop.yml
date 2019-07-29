@@ -7,7 +7,7 @@ AllCops:
     - '**/spec/specs_tools.rb'
     - 'bin/**/*'
     - '_*/**/*'
-  TargetRubyVersion: 2.2
+  TargetRubyVersion: 2.3
 
 Gemspec/RequiredRubyVersion:
   # Yes, we still support ruby 2.1...
@@ -31,13 +31,13 @@ Layout/EmptyLines:
 Layout/EmptyLineBetweenDefs:
   NumberOfEmptyLines: [1, 2]
 
-Layout/FirstParameterIndentation:
+Layout/IndentFirstArgument:
   IndentationWidth: 4
 
-Layout/IndentArray:
+Layout/IndentFirstArrayElement:
   EnforcedStyle: align_brackets
 
-Layout/IndentHash:
+Layout/IndentFirstHashElement:
   EnforcedStyle: align_braces
 
 Layout/IndentHeredoc:
@@ -185,13 +185,13 @@ Style/Alias:
 
 Naming/PredicateName:
   NamePrefix:
-      - is_
-      - have_
+    - is_
+    - have_
   NamePrefixBlacklist:
-      - have_
+    - have_
   NameWhitelist:
-      - is_statement
-      - is_child_statement
+    - is_statement
+    - is_child_statement
 
 Style/GuardClause:
   Enabled: false
